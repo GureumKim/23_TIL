@@ -38,8 +38,6 @@ print()
 
 # 2 에라토스테네스의 체
 
-# import math
-# math.sqrt() 사용 가능
 n = int(input())
 ans = [1] * (n + 1)
 ans[:2] = [0] * 2
@@ -51,6 +49,20 @@ for i in range(2, n + 1):
     if ans[i]:
         print(i, end=' ')
 print()
+
+# import math
+# math.sqrt() 사용 가능
+import math
+def erato(n):
+    arr = [0]*(n+1)
+    for i in range(2,int(math.sqrt(n))+1):
+        for j in range(2*i,n+1,i):
+            arr[j] = 1
+    for i in range(2,n+1):
+        if not arr[i]:
+            print(i,end=' ')
+    print()
+erato(20)
 
 # Sliding Window
 # key word = "연속되는" 구간합 !!
