@@ -6,7 +6,7 @@ Topological Sort(위상 정렬),,, 큐 이용 --> BFS 느낌
 
 from collections import deque
 
-name = ['cs', 'language', 'datastructue', 'algorithm', 'project', 'cdoding test', 'be a programmer']
+name = ['A','B','C','D','E','F','G']
 arr = [
     [0, 0, 0, 0, 0, 0, 1],
     [0, 0, 1, 1, 1, 0, 0],
